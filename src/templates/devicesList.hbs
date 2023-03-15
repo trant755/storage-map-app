@@ -1,0 +1,35 @@
+<div class='devices-list' id='test'>
+  {{#if count.count1}}
+    <div
+      class='device device--laptop'
+      style='top: {{devices.laptop.top}}; left: {{devices.laptop.left}}'
+    >
+      <img class='device__mask' name='laptop' src='{{img.laptopMask}}' alt='' />
+    </div>
+  {{/if}}
+  {{#if count.count2}}
+    <div
+      class='device device--smart'
+      style='top: {{devices.smartphone.top}}; left: {{devices.smartphone.left}}'
+    >
+      <img
+        class='device__mask'
+        name='smartphone'
+        src='{{img.smartMask}}'
+        alt=''
+      />
+    </div>
+  {{/if}}
+  {{#if count.count3}}
+    <div
+      class='device device--phone'
+      style='top: {{devices.phone.top}}; left: {{devices.phone.left}}'
+    >
+      <img class='device__mask' name='phone' src='{{img.phoneMask}}' alt='' />
+    </div>
+  {{/if}}
+  <p
+    class='user-latency'
+    style='top: {{devices.latencyDisplay.top}}; left: {{devices.latencyDisplay.left}}'
+  ></p>
+</div>

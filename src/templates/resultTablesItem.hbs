@@ -1,0 +1,28 @@
+<li class='table__item'>
+  <div class='table__title-box'>
+    <p class='table__storage-name'>{{name}}</p>
+    <div class='rating'>
+      <div class='rating__star {{rating5}}'>★</div>
+      <div class='rating__star {{rating4}}'>★</div>
+      <div class='rating__star {{rating3}}'>★</div>
+      <div class='rating__star {{rating2}}'>★</div>
+      <div class='rating__star {{rating1}}'>★</div>
+    </div>
+  </div>
+  <ul class='table__results-list'>
+    <li class='table__results-item table__results-item--latency'>
+      <p>Latency</p>
+      <p>{{latency}}</p>
+    </li>
+    <li class='table__results-item table__results-item--download-time'>
+      <p>Download time</p>
+      <p>{{downloadTime}} sec</p>
+    </li>
+    <li
+      class='table__results-item table__results-item--flex-grow table__results-item--video-streaming'
+    >
+      <p>Video streaming</p>
+      <p>{{streamingQuality}}</p>
+    </li>
+  </ul>
+</li>
