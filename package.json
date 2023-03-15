@@ -2,9 +2,10 @@
   "name": "storage-map-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://trant755.github.io/storage-map-app",
   "scripts": {
     "start": "parcel src/*.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/*.html --public-url /storage-map-app/"
   },
   "author": "",
   "license": "ISC",
