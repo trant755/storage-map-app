@@ -583,12 +583,14 @@ function choosingStorageLocation() {
     (0, _refsJs.stepBtn).removeEventListener("click", choosingStorageLocation);
     (0, _refsJs.mapEl).removeEventListener("change", userStepHandler);
     (0, _refsJs.mapEl).addEventListener("click", storageStepHandler);
+    (0, _refsJs.stepTitle).textContent = "Where is your data? choose one spot for Object Storage system";
     (0, _refsJs.stepBtn).textContent = "";
     (0, _storagesControlerJs.storagesController).renderStorages();
 }
 function startAnimation() {
     (0, _storagesControlerJs.storagesController).clearNotSelectedStorages();
     (0, _refsJs.mapEl).removeEventListener("click", storageStepHandler);
+    (0, _refsJs.stepTitle).textContent = "";
     (0, _refsJs.stepBtn).textContent = "";
     (0, _conectionControllerJs.conectionController).analysisReceivedInformation((0, _usersControllerJs.usersController).selectedUsers, (0, _storagesControlerJs.storagesController).selectedStorages);
     animationListenerHandler();

@@ -24,6 +24,8 @@ function choosingStorageLocation() {
   mapEl.removeEventListener('change', userStepHandler);
 
   mapEl.addEventListener('click', storageStepHandler);
+  stepTitle.textContent =
+    'Where is your data? choose one spot for Object Storage system';
   stepBtn.textContent = '';
 
   storagesController.renderStorages();
@@ -33,6 +35,7 @@ function startAnimation() {
   storagesController.clearNotSelectedStorages();
   mapEl.removeEventListener('click', storageStepHandler);
 
+  stepTitle.textContent = '';
   stepBtn.textContent = '';
 
   conectionController.analysisReceivedInformation(
